@@ -28,7 +28,7 @@ export default function MovieForm({ submitMovie, onMovieChange }) {
           <input required type="number" onChange={e => setMovie({ ...movie, releaseDate: e.target.value })} value={movie.releaseDate || ''} />
         </label>
         <label>
-            Color
+            Color 
           <select required onChange={e => setMovie({ ...movie, color: e.target.value })} value={movie.color || ''}>
             <option value="lightgreen">Green</option>
             <option value="lightblue">Blue</option>
@@ -38,7 +38,6 @@ export default function MovieForm({ submitMovie, onMovieChange }) {
           </select>
         </label>
         <button>Add Movie</button>
-
       </form>  
     </div>
   );

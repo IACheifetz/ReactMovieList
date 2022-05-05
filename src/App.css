@@ -15,6 +15,11 @@ body, html, #root {
   padding: 50px
 }
 
+.movie {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .movie-form label, .movie-form input{
   display: block;
 }
