@@ -38,6 +38,14 @@ function App() {
         Filter Titles
         <input onChange={(e) => handleFilterMovies(e.target.value)} />
       </div>
+      <MovieForm 
+        submitMovie={submitMovie}
+        onMovieChange={(movie) => setCurrentMovie(movie)}
+      />
+      <MovieList 
+        movies={filteredMovies ? filteredMovies : allMovies} 
+        handleDeleteMovie={handleDeleteMovie}
+      />
     </div>
   );
 }

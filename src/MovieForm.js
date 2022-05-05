@@ -16,7 +16,7 @@ export default function MovieForm({ submitMovie, onMovieChange }) {
     <div className='movie-form-container quarter'>
       <form onSubmit={handleSubmit} className='movie-form'>
         <label>
-            Name
+            Title
           <input required onChange={e => setMovie({ ...movie, name: e.target.value })} value={movie.name || ''} />
         </label>
         <label>
